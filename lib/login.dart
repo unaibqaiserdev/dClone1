@@ -17,8 +17,8 @@ class _NewLoginState extends State<NewLogin> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Colors.red,
-                Colors.teal,
+                Color.fromRGBO(164, 22, 35, 1),
+                Color.fromRGBO(248, 94, 0, 1)
               ]),
         ),
         child: Center(
@@ -27,11 +27,13 @@ class _NewLoginState extends State<NewLogin> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
-                child: Icon(
-                  FontAwesomeIcons.heartBroken,
-                  color: Color.fromRGBO(247, 54, 109, 1.0),
-                  size: 70,
-                ),
+                height: 120,
+                width: 100,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                  image: AssetImage("assets/pizza.PNG"),
+                  fit: BoxFit.scaleDown,
+                )),
               ),
               Container(
                 margin: const EdgeInsets.only(top: 20),
@@ -41,7 +43,7 @@ class _NewLoginState extends State<NewLogin> {
                     Text(
                       "Company",
                       style: TextStyle(
-                          color: Color.fromRGBO(245, 51, 111, 1.0),
+                          color: Color.fromRGBO(255, 181, 99, 1.0),
                           fontSize: 25,
                           fontWeight: FontWeight.bold,
                           decoration: TextDecoration.none,
@@ -118,8 +120,8 @@ class _NewLoginState extends State<NewLogin> {
                     ),
                     filled: true,
                     fillColor: Colors.white,
-                    prefixIcon: Icon(Icons.email),
-                    hintText: "Enter your Email",
+                    prefixIcon: Icon(Icons.lock_rounded),
+                    hintText: "Enter your Password",
                     hintStyle: TextStyle(
                         fontWeight: FontWeight.w700, color: Colors.black),
                   ),

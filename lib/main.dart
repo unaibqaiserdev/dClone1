@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text(
                     "Company",
                     style: TextStyle(
-                        color: Color.fromRGBO(255, 81, 99, 1.0),
+                        color: Color.fromRGBO(255, 181, 99, 1),
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
                         decoration: TextDecoration.none,
